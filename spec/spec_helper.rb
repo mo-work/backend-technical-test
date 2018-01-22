@@ -17,8 +17,12 @@ ENV['RACK_ENV'] = 'test'
 
 require File.expand_path '../../app/app', __FILE__
 
+$LOAD_PATH << File.dirname(__FILE__) + '/specs/factories'
+
 require 'rack/test'
 require 'rspec'
+require 'faker'
+require 'factory_bot'
 
 module RSpecMixin
   include Rack::Test::Methods
@@ -32,6 +36,11 @@ RSpec.configure { |c| c.include RSpecMixin }
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
+
+  config.before(:suite) do
+    FactoryBot.find_definitions
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

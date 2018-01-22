@@ -9,6 +9,9 @@ $LOAD_PATH << File.dirname(__FILE__) + '/controllers'
 require 'bundler/setup'
 require 'sinatra/base'
 
+# models
+require 'user'
+# controllers
 require 'application_controller'
 
 class Playground < Sinatra::Base
@@ -17,4 +20,6 @@ class Playground < Sinatra::Base
   set :environments, %w[development test production staging]
 
   use ApplicationController
+
+  Mongoid.load!(Playground.root+'/../config/mongoid.yml', Playground.environment)
 end

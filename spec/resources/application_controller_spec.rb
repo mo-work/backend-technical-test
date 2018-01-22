@@ -13,4 +13,5 @@ describe ApplicationController do
     res = JSON.parse(last_response.body)
     expect(res['message']).to include('Welcome')
   end
+  
 end

@@ -8,8 +8,11 @@ gem 'rack'
 gem 'rake'
 gem 'shotgun'
 gem 'sinatra'
+gem 'mongoid'
 
 group :test do
+  gem 'faker'
   gem 'rspec'
   gem 'rack-test'
+  gem 'factory_bot'
 end
