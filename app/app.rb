@@ -11,6 +11,10 @@ require 'sinatra/base'
 
 # models
 require 'user'
+require 'thank'
+require 'entity_object'
+require 'entity_value'
+
 # controllers
 require 'application_controller'
 
@@ -21,5 +25,5 @@ class Playground < Sinatra::Base
 
   use ApplicationController
 
-  Mongoid.load!(Playground.root+'/../config/mongoid.yml', Playground.environment)
+  Mongoid.load!(Playground.root + '/../config/mongoid.yml', Playground.environment)
 end
