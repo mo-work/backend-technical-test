@@ -17,6 +17,7 @@ require 'entity_value'
 
 # controllers
 require 'application_controller'
+require 'thanks_controller'
 
 class Playground < Sinatra::Base
   Encoding.default_external = 'UTF-8'
@@ -24,6 +25,7 @@ class Playground < Sinatra::Base
   set :environments, %w[development test production staging]
 
   use ApplicationController
+  use ThanksController
 
   Mongoid.load!(Playground.root + '/../config/mongoid.yml', Playground.environment)
 end

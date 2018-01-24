@@ -3,7 +3,8 @@
 require File.expand_path '../../spec_helper.rb', __FILE__
 
 describe User do
-  let(:user1) { create(:user) }
+  include FactoryHelper
+  include_context 'factories'
 
   before do
   end

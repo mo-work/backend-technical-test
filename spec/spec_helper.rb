@@ -19,13 +19,13 @@ ENV['RACK_ENV'] = 'test'
 
 require File.expand_path '../../app/app', __FILE__
 
-$LOAD_PATH << File.dirname(__FILE__) + '/specs/factories'
-
 require 'rack/test'
 require 'rspec'
 require 'faker'
 require 'factory_bot'
 require 'database_cleaner'
+
+require 'helpers/factory_helper'
 
 module RSpecMixin
   include Rack::Test::Methods
