@@ -9,6 +9,7 @@ class User
   field :forename, type: String
   field :surname, type: String
   field :email, type: String
+  field :session, type: String
 
   embeds_many :entity_values, as: :entity_valueable
 
@@ -24,4 +25,9 @@ class User
   index({ email: 1 }, background: true)
 
   scope :by_email, ->(str) { where(email: str) }
+
+  # super simplified for now
+  def create_session
+    self.session = SecureRandom.hex
+  end
 end

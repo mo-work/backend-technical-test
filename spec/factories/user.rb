@@ -13,5 +13,6 @@ FactoryBot.define do
     forename { Faker::Name.first_name }
     surname { Faker::Name.last_name }
     email { "#{forename}.#{surname}@example.com".downcase }
+    session { SecureRandom.hex }
   end
 end

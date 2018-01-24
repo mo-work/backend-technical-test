@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
-class ThanksController < Sinatra::Base
+class ThanksController < ApplicationController
   post '/thanks' do
-    {
-      message: 'TODO!'
-    }.to_json
+    # TODO
   end
 end

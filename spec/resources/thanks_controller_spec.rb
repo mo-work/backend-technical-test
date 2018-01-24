@@ -9,12 +9,20 @@ describe ThanksController do
   before(:each) do
   end
 
+  # TODO
   it 'should create a new message' do
-    message = "Thanks!"
+    message = 'Thanks!'
+
     post '/thanks'
     expect(last_response.status).to eq 200
 
-    res = JSON.parse(last_response.body)
-    expect(res['message']).to include('Thanks')
+    t = Thank.last
+    expect(t.message).to include('Thanks')
+    expect(t.from).to eq(user1)
+    expect(t.to).to eq(user2)
+  end
+
+  xit 'should return errors if ...' do
+    # TODO
   end
 end
