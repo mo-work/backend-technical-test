@@ -15,7 +15,7 @@ shotgun
 3. Remove git history `rm -rf !$/.git`
 4. Initial a fresh repo `git init`
 5. Solve the below tasks, committing as you go
-6. Bundle the end result `git bundle create merlin.bundle master`
+6. Bundle and submit the end result `git bundle create merlin.bundle master`
 
 ## Tasks
 
