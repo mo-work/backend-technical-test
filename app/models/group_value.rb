@@ -2,12 +2,12 @@
 
 require 'mongoid'
 
-class EntityValue
+class GroupValue
   include Mongoid::Document
   include Mongoid::Timestamps
 
   field :value, type: String
   field :name, type: String
 
-  embedded_in :entity_valueable, polymorphic: true
+  embedded_in :group_valueable, polymorphic: true
 end

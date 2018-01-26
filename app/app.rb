@@ -12,8 +12,8 @@ require 'sinatra/base'
 # models
 require 'user'
 require 'thank'
-require 'entity_object'
-require 'entity_value'
+require 'group_type'
+require 'group_value'
 
 # controllers
 require 'application_controller'
