@@ -11,7 +11,7 @@ class User
   field :email, type: String
   field :session, type: String
 
-  embeds_many :entity_values, as: :entity_valueable
+  embeds_many :group_values, as: :group_valueable
 
   has_many :thanks_received, class_name: 'Thank', foreign_key: :to_id, dependent: :destroy, inverse_of: nil
   has_many :thanks_given, class_name: 'Thank', foreign_key: :from_id, dependent: :destroy, inverse_of: nil

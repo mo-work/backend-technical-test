@@ -30,5 +30,5 @@ There are some failing tests :(
 Try to fix all or as many as you can within two hours. Aim to demonstrate your knowledge of Ruby, Sinatra and MongoDB.
 
 1. Scopes: Modify the `User.by_email` scope to allow wildcard search.
-2. Data: Complete the method `Thank.stats_messages_sent` which should return all sent messages grouped by an entity.
+2. Data: Complete the method `Thank.stats_messages_sent` which should return all sent messages grouped by a group value.
 3. API: Post a message to another user. (User authentication is simplified.)

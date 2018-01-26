@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 FactoryBot.define do
-  factory :entity_value, class: EntityValue do
-    value { Faker::Lorem.word }
+  factory :group_type, class: GroupType do
     name { Faker::Lorem.word }
   end
 end

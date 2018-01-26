@@ -11,8 +11,8 @@ class Thank
   belongs_to :to, class_name: 'User'
   belongs_to :from, class_name: 'User'
 
-  embeds_many :to_entity_values, as: :entity_valueable, class_name: 'EntityValue'
-  embeds_many :from_entity_values, as: :entity_valueable, class_name: 'EntityValue'
+  embeds_many :to_group_values, as: :group_valueable, class_name: 'GroupValue'
+  embeds_many :from_group_values, as: :group_valueable, class_name: 'GroupValue'
 
   validates_presence_of :message
 
@@ -29,7 +29,7 @@ class Thank
   private
 
   def create_entities
-    to&.entity_values&.map { |v| to_entity_values << v }
-    from&.entity_values&.map { |v| from_entity_values << v }
+    to&.group_values&.map { |v| to_group_values << v }
+    from&.group_values&.map { |v| from_group_values << v }
   end
 end

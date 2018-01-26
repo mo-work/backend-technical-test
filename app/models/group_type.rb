@@ -2,10 +2,10 @@
 
 require 'mongoid'
 
-class EntityObject
+class GroupType
   include Mongoid::Document
 
   field :name, type: String
 
-  embeds_many :entity_values, as: :entity_valueable
+  embeds_many :group_values, as: :group_valueable
 end
