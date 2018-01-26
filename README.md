@@ -25,7 +25,7 @@ shotgun
 
 ## Tasks
 
-There are some failing tests :(
+There are some failing tests 😭
 
 Try to fix all or as many as you can within two hours. Aim to demonstrate your knowledge of Ruby, Sinatra and MongoDB.
 
