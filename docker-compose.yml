@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: mongo
+  web:
+    build: .
+    command: bundle exec shotgun -p 3000 -o '0.0.0.0'
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db

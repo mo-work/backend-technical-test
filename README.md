@@ -16,11 +16,9 @@ The central part of ThanksBox's tech stack is it's API. This repository contains
 
 ## Setup
 
-```
-bundle
-rspec
-shotgun
-```
+To run tests: `docker-compose run web rspec`
+
+To run application: `docker-compose run web`
 
 
 ## Tasks

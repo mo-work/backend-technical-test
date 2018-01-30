@@ -3,11 +3,11 @@ test:
     default:
       database: playground_test
       hosts:
-        - localhost:27017
+        - db
 
 development:
   clients:
     default:
       database: playground_dev
       hosts:
-        - localhost:27017
+        - db
