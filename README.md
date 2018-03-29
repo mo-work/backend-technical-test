@@ -6,7 +6,7 @@ The central part of ThanksBox's tech stack is it's API. This repository contains
 ## Test Process
 
 1. Clone this repo `git clone git@github.com:MerlinBB/ThanksBox-backend-technical-test.git`
-2. Move into folder `cd ThanksBox-backend-technical-test.git`
+2. Move into folder `cd ThanksBox-backend-technical-test`
 3. Remove git history `rm -rf !$/.git`
 4. Initialise a fresh repo `git init`
 5. Make a first commit `git add . && git commit -m "start test"`
