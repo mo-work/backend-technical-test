@@ -11,7 +11,7 @@ The central part of ThanksBox's tech stack is it's API. This repository contains
 4. Initialise a fresh repo `git init`
 5. Make a first commit `git add . && git commit -m "start test"`
 6. Solve the below tasks, committing as you go
-7. Bundle and the end result, and submit this via email (awesome-dev-jobs@thanksbox.co) `git bundle create <yourname>.bundle master`
+7. Bundle the end result, and submit this via email (awesome-dev-jobs@thanksbox.co) `git bundle create <yourname>.bundle master`
 
 
 ## Setup
