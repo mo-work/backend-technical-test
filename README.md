@@ -1,6 +1,6 @@
 # ThanksBox Backend Technical Test
 
-The central part of ThanksBox's tech stack is it's API. This repository contains a simplified version of it, using the same technologies. The API is built in Ruby, with Sinatra, tests are written in RSpec and we use MongoDB as our database.
+The central part of ThanksBox's tech stack is its API. This repository contains a simplified version, using the same technologies. The API is built in Ruby, with Sinatra, tests are written in RSpec and we use MongoDB as our database.
 
 
 ## Test Process
